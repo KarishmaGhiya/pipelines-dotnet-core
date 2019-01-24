@@ -9,7 +9,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet restore
+- script: dotnet build
 
 - task: DotNetCoreInstaller@0
   inputs:
