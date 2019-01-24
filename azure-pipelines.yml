@@ -8,8 +8,8 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-steps:
-- script: dotnet build
+
+
 
 - task: DotNetCoreInstaller@0
   inputs:
