@@ -18,7 +18,7 @@ steps:
 - script: dotnet tool install -g dotnetsay
 - script: dotnetsay
  
-- script: dotnet test Build.SourcesDirectory/dotnetcore-tests/dotnetcore-tests.csproj  --logger trx
+- script: dotnet test Build.SourcesDirectory/pipelines-dotnet-core/dotnetcore-tests/dotnetcore-tests.csproj  --logger trx
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
