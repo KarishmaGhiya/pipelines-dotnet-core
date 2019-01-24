@@ -15,7 +15,8 @@ steps:
   inputs:
     version: '2.2.103'
     
-
+- script: dotnet tool install -g dotnetsay
+- script: dotnetsay
     
 - task: PublishTestResults@2
   condition: succeededOrFailed()
