@@ -8,7 +8,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-
+steps:
 - script: dotnet restore
 
 - task: DotNetCoreInstaller@0
@@ -21,6 +21,5 @@ variables:
   condition: succeededOrFailed()
   inputs:
     testRunner: VSTest
-    testResultsFiles: '**/*.trx'
+    testResultsFiles: '*/*.trx'
 
-- task: PublishBuildArtifacts@1
