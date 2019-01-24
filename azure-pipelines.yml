@@ -17,16 +17,12 @@ steps:
     
 - script: dotnet tool install -g dotnetsay
 - script: dotnetsay
-    
+ 
+- script: dotnet test '**/*Tests/*.csproj'  --logger trx
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
     
-- task: DotNetCoreCLI@2
-  inputs:
-    command: test
-    projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
-
+    
