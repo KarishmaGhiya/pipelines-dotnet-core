@@ -2,8 +2,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core?view=vsts
 
 
-  
-  pool:
+ pool:
   vmImage: 'macOS-10.13'
   
 variables:
