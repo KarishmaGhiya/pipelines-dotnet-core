@@ -16,7 +16,7 @@ steps:
 
 - task: DotNetCoreInstaller@0
   inputs:
-    version: '2.2'
+    version: '2.2.103'
     
 - task: PublishTestResults@2
   condition: succeededOrFailed()
