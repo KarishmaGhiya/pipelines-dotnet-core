@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/azure-sdk/playground/_apis/build/status/KarishmaGhiya.pipelines-dotnet-core?branchName=master)](https://dev.azure.com/azure-sdk/playground/_build/latest?definitionId=69&branchName=master)
 
 # Sample ASP.NET Core application for Azure Pipelines docs
 
